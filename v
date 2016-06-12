@@ -2,7 +2,7 @@
 
 # Customize
 # -----------------------
-limit=30 #lucky number
+limit=30
 # -----------------------
 
 file="$HOME/.vim_mru_files"

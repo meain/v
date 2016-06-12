@@ -36,6 +36,7 @@ do
         then
             igflag=0
         else
+            line=`echo "$line" | tr '[:upper:]' '[:lower:]'`
             list["$ln"]="$line"
         fi
     fi

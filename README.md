@@ -30,6 +30,6 @@ Customization that you can do.
     Example ( for mvim ):
 
      ```shell
-    [ "$vim" ] || vim=nvim
+    [ "$vim" ] || vim=mvim
     ```
 

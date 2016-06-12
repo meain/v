@@ -9,6 +9,11 @@ file="$HOME/.vim_mru_files"
 ln=0
 n=0
 flag=0
+igflag=0
+lfile=""
+ignorelist[0]=".git/MERGE_MSG"
+ignorelist[1]=".git/COMMIT_EDITMSG"
+ignorelist[2]=".git/index"
 
 if ! [ -f "$file" ];
 then
@@ -21,7 +26,18 @@ while IFS= read line
 do
     ln=$((ln+1))
     if (("$ln">1)); then
-        list["$ln"]="$line"
+        for z in "${ignorelist[@]}"
+        do
+            if [[ "$line" =~ "$z" ]]; then
+                igflag=1
+            fi
+        done
+        if (("$igflag" == 1));
+        then
+            igflag=0
+        else
+            list["$ln"]="$line"
+        fi
     fi
 done <"$file"
 

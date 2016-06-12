@@ -3,8 +3,8 @@
 # Customize
 # -----------------------
 limit=20
+[ "$vim" ] || vim=nvim
 # -----------------------
-
 file="$HOME/.vim_mru_files"
 ln=0
 n=0
@@ -26,7 +26,7 @@ then
     do
         bn=`basename "$i" | grep "$1"`
         if [ ! -z "$bn" -a "$bn" != " " ]; then
-            nvim "$i"
+            $vim "$i"
             flag=1
             break
         fi

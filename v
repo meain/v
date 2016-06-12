@@ -10,6 +10,12 @@ ln=0
 n=0
 flag=0
 
+if ! [ -f "$file" ];
+then
+   echo "Make sure you have installed MRU plugin for vim. See README."
+   exit 1
+fi
+
 # Get the data in the file to list
 while IFS= read line
 do

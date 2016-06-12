@@ -1,0 +1,23 @@
+#!/bin/bash
+
+[ "$vim" ] || vim=nvim
+file="$HOME/.vim_mru_files"
+ln=0
+
+if ! [ -f "$file" ];
+then
+   echo "Make sure you have installed MRU plugin for vim. See README."
+   exit 1
+fi
+
+# Get the data in the file to list
+while IFS= read line
+do
+    ln=$((ln+1))
+    if (("$ln">1)); then
+        list["$ln"]="$line"
+        break
+    fi
+done <"$file"
+
+$vim ${line[0]}

@@ -20,6 +20,15 @@ Usage: `$ v <term>`
 
 Example: `$ v readme`
 
+###Extra : 
+
+You could install `vv` to open the last edited vim file instatly. Install it using : 
+
+```
+git clone https://github.com/meain/v && chmod +x v/vv && cp v/vv /usr/local/bin/ && rm v
+```
+
+
 # Customize
 Customization that you can do.
 

@@ -32,7 +32,8 @@ then
         fi
     done
 else
-    echo "What do you like to search?"
+    echo "List of recent files"
+    echo "--------------------"
     for i in "${list[@]}"
     do
             echo "$i"

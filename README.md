@@ -1,5 +1,5 @@
 # v
-Quick access to recent files in Vim.
+Quick access to recent files in Vim ( any vim fork ).
 
 It opens the latest file with the filename containing the argument you have given.
 
@@ -20,10 +20,15 @@ Usage: `$ v <term>`
 Example: `$ v readme`
 
 # Customize
-You have one small customization that you can do.
+Customization that you can do.
 
-You can change the number of entries that `v` will show if you use `v` without any arguments
+* You can change the number of entries that `v` will show if you use `v` without any arguments. You can change it in the script. Just change the variable `limit` in the beginning.
 
-`$ v`
+* You can change your editor ( to whichever vim fork )
+    Change the varible vim to your favorite editor.
+    Example ( for mvim ):
 
-You can change it in the script. Just change the variable `limit` in the beginning.
+        ```
+        [ "$vim" ] || vim=nvim
+        ```
+

@@ -42,8 +42,7 @@ Customization that you can do.
     [ "$vim" ] || vim=mvim
     ```
 
-* Ignore list
-    You can set the script to ignore certain files by adding in more to :
+* You can set the script to ignore certain files by adding in more to :
     ```
     ignorelist[0]=".git/MERGE_MSG"
     ignorelist[1]=".git/COMMIT_EDITMSG"

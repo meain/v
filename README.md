@@ -8,7 +8,10 @@ It opens the latest file with the filename containing the argument you have give
 
 # Installation
 1. Install [MRU](https://github.com/vim-scripts/mru.vim) plugin for Vim
-2. Put `v` somewhere in $PATH (e.g. /usr/local/bin/).
+2. Put `v` somewhere in $PATH (e.g. /usr/local/bin/) or use this ( you still will have to install [MRU](https://github.com/vim-scripts/mru.vim) )
+    ```
+    git clone https://github.com/meain/v && cp v/v /usr/local/bin/ && rm v
+    ```
 
 # Usage
 

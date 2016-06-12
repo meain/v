@@ -22,6 +22,6 @@ This is the same number of entries that `v` will show if you use `v` without any
 
 `$ v`
 
-You can change it in the script. Just change the variable limit in the beginning.
+You can change it in the script. Just change the variable `limit` in the beginning.
 
 

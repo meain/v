@@ -38,7 +38,15 @@ Customization that you can do.
     Change the varible vim to your favorite editor.
     Example ( for mvim ):
 
-     ```shell
+    ```
     [ "$vim" ] || vim=mvim
+    ```
+
+* Ignore list
+    You can set the script to ignore certain files by adding in more to :
+    ```
+    ignorelist[0]=".git/MERGE_MSG"
+    ignorelist[1]=".git/COMMIT_EDITMSG"
+    ignorelist[2]=".git/index"
     ```
 

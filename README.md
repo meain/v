@@ -29,7 +29,7 @@ Customization that you can do.
     Change the varible vim to your favorite editor.
     Example ( for mvim ):
 
-        ```
-        [ "$vim" ] || vim=nvim
-        ```
+     ```shell
+    [ "$vim" ] || vim=nvim
+    ```
 

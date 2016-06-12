@@ -1,7 +1,12 @@
 #!/bin/bash
+
+# Customize
+# -----------------------
+limit=13 #lucky number
+# -----------------------
+
 file="$HOME/.vim_mru_files"
 ln=0
-limit=13 #lucky number
 
 # Get the data in the file to list
 while IFS= read line

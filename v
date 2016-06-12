@@ -4,6 +4,9 @@
 # -----------------------
 limit=20
 [ "$vim" ] || vim=nvim
+ignorelist[0]=".git/MERGE_MSG"
+ignorelist[1]=".git/COMMIT_EDITMSG"
+ignorelist[2]=".git/index"
 # -----------------------
 file="$HOME/.vim_mru_files"
 ln=0
@@ -11,9 +14,6 @@ n=0
 flag=0
 igflag=0
 lfile=""
-ignorelist[0]=".git/MERGE_MSG"
-ignorelist[1]=".git/COMMIT_EDITMSG"
-ignorelist[2]=".git/index"
 
 if ! [ -f "$file" ];
 then

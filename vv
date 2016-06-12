@@ -22,15 +22,17 @@ do
     if (("$ln">1)); then
         for z in "${ignorelist[@]}"
         do
-            if ! [[ "$line" =~ "$z" ]]; then
-                lfile="$line"
+            if [[ "$line" =~ "$z" ]]; then
                 igflag=1
-                break
             fi
         done
-    fi
-    if (("$igflag" == 1)); then
-        break
+        if (("$igflag" == 1));
+        then
+            igflag=0
+        else
+            lfile="$line"
+            break
+        fi
     fi
 done <"$file"
 

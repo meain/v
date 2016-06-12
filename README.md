@@ -1,32 +1,39 @@
 # v
 Quick access to recent files in Vim ( any vim fork ).
 
-It opens the latest file with the filename containing the argument you have given.
+`v`&nbsp; - It opens the latest file with the filename containing the argument you have given
+
+`vv` - It opens the last edited file in vim
 
 **This depends on [MRU](https://github.com/vim-scripts/mru.vim) plugin in vim.**
 
 
 # Installation
 1. Install [MRU](https://github.com/vim-scripts/mru.vim) plugin for Vim
-2. Put `v` somewhere in $PATH (e.g. /usr/local/bin/) or use this ( you still will have to install [MRU](https://github.com/vim-scripts/mru.vim) )
+2. Install `v` only :
 
     ```
     git clone https://github.com/meain/v && chmod +x v/v && cp v/v /usr/local/bin/ && rm v
     ```
+    Install `vv` only :
+
+    ```
+    git clone https://github.com/meain/v && chmod +x v/vv && cp v/vv /usr/local/bin/ && rm v
+    ```
+    Install both `v` and `vv` :
+
+    ```
+    git clone https://github.com/meain/v && chmod +x v/v* && cp v/v* /usr/local/bin/ && rm v
+    ```
 
 # Usage
 
+## v
 Usage: `$ v <term>`
 
 Example: `$ v readme`
-
-###Extra : 
-
-You could install `vv` to open the last edited vim file instatly. Install it using : 
-
-```
-git clone https://github.com/meain/v && chmod +x v/vv && cp v/vv /usr/local/bin/ && rm v
-```
+## vv
+Usage: `$ vv`
 
 
 # Customize

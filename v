@@ -2,7 +2,7 @@
 
 # Customize
 # -----------------------
-limit=30
+limit=20
 # -----------------------
 
 file="$HOME/.vim_mru_files"

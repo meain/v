@@ -7,6 +7,7 @@ limit=20
 ignorelist[0]=".git/MERGE_MSG"
 ignorelist[1]=".git/COMMIT_EDITMSG"
 ignorelist[2]=".git/index"
+ignorelist[3]="/private/var/folders/nc"
 # -----------------------
 file="$HOME/.vim_mru_files"
 ln=0

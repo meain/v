@@ -9,6 +9,7 @@ ignorelist[1]=".git/COMMIT_EDITMSG"
 ignorelist[2]=".git/index"
 ignorelist[3]="/private/var/folders/nc"
 # -----------------------
+
 file="$HOME/.vim_mru_files"
 ln=0
 n=0

@@ -50,4 +50,3 @@ Customization that you can do.
     ignorelist[1]=".git/COMMIT_EDITMSG"
     ignorelist[2]=".git/index"
     ```
-

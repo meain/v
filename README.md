@@ -20,11 +20,6 @@ Quick access to recent files in Vim ( any vim fork ).
     ```
     git clone https://github.com/meain/v && chmod +x v/vv && cp v/vv /usr/local/bin/ && rm v && echo 'Installed vv'
     ```
-    Install/update both `v` and `vv` :
-
-    ```
-    git clone https://github.com/meain/v && chmod +x v/v* && cp v/v* /usr/local/bin/ && rm v && echo 'Installed v and vv'
-    ```
 
 # Usage
 

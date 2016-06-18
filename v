@@ -57,7 +57,7 @@ then
     if (("$flag" ==  0)); then
         # echo "No recent file that matches!"
         # Get the data in the file to list
-        find . -maxdepth 1 -type f > "$HOME/.cur_dir_files"
+         find . -maxdepth 1 -type f -exec grep -Iq . {} \; -and -print > "$HOME/.cur_dir_files"
         filex="$HOME/.cur_dir_files"
         while IFS= read line
         do

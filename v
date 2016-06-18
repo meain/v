@@ -79,6 +79,9 @@ then
             fi
         done <"$filex"
 
+        # remove the file list
+        rm "$HOME/.cur_dir_files"
+
         # Work on the list of files available
         if [ ! -z "$1" -a "$1" != " " ]
         then

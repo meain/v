@@ -12,16 +12,7 @@ If the query you given is not in the list of recent file it will load the file t
 
 # Installation
 1. Install [MRU](https://github.com/vim-scripts/mru.vim) plugin for Vim
-2. Install/update `v` only :
-
-    ```
-    git clone https://github.com/meain/v && chmod +x v/v && cp v/v /usr/local/bin/ && rm v && echo 'Installed v'
-    ```
-    Install/update `vv` only :
-
-    ```
-    git clone https://github.com/meain/v && chmod +x v/vv && cp v/vv /usr/local/bin/ && rm v && echo 'Installed vv'
-    ```
+2. Install `v/vv` by adding it to a location in your $PATH variable and making it excecutable
 
 # Usage
 

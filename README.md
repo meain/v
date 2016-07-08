@@ -1,6 +1,8 @@
 # v
 Quick access to recent files in Vim ( any vim fork ).
 
+Idea stolen from [rupa/v](https://github.com/rupa/v) but it only support original vim.
+
 If the query you given is not in the list of recent file it will load the file that matches your querry in the current directory if availabe.
 
 `v`&nbsp; - It opens the latest file with the filename containing the argument you have given

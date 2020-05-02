@@ -27,21 +27,5 @@ Usage: `$ vv`
 
 
 # Customize
-Customization that you can do.
 
-* You can change the number of entries that `v` will show if you use `v` without any arguments. You can change it in the script. Just change the variable `limit` in the beginning.
-
-* You can change your editor ( to whichever vim fork )
-    Change the varible vim to your favorite editor.
-    Example ( for mvim ):
-
-    ```
-    [ "$vim" ] || vim=mvim
-    ```
-
-* You can set the script to ignore certain files by adding in more to :
-    ```
-    ignorelist[0]=".git/MERGE_MSG"
-    ignorelist[1]=".git/COMMIT_EDITMSG"
-    ignorelist[2]=".git/index"
-    ```
+Maybe you might wanna add more items to `IGNORE_LIST` var in `v`.

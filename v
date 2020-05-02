@@ -19,4 +19,4 @@ fi
 
 echo "List of recent files"
 echo "--------------------"
-tail -n+2 "$MRU_FILE"
+tail -n+2 "$MRU_FILE" | head -n15

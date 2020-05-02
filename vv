@@ -1,44 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-# Customize
-# -----------------------
-[ "$vim" ] || vim=nvim
-ignorelist[0]=".git/MERGE_MSG"
-ignorelist[1]=".git/COMMIT_EDITMSG"
-ignorelist[2]=".git/index"
-ignorelist[3]="/private/var/folders/nc"
-# -----------------------
+set -e
 
-file="$HOME/.vim_mru_files"
-ln=0
-igflag=0
-lfile=""
-
-if ! [ -f "$file" ];
-then
-   echo "Make sure you have installed MRU plugin for vim. See README."
-   exit 1
-fi
-
-# Get the data in the file to list
-while IFS= read line
-do
-    ln=$((ln+1))
-    if (("$ln">1)); then
-        for z in "${ignorelist[@]}"
-        do
-            if [[ "$line" =~ "$z" ]]; then
-                igflag=1
-            fi
-        done
-        if (("$igflag" == 1));
-        then
-            igflag=0
-        else
-            lfile="$line"
-            break
-        fi
-    fi
-done <"$file"
-
-$vim "$lfile"
+# EDITOR can be anything that runs vimscript
+"$EDITOR" -c 'exec "edit ".fnameescape(v:oldfiles[0])'
